@@ -33,7 +33,7 @@ public class Main {
                     break;
                 } else if (Objects.equals(userInput, "quit")) {
                     System.out.println("Вы решили соскочить? Грац! Игра окончена.");
-                    scanner.close();
+                    return;
                 } else {
                     try {
                         userNumber = Integer.parseInt(userInput);
@@ -50,7 +50,7 @@ public class Main {
                 String inputStake = scanner.nextLine();
                 if (Objects.equals(inputStake, "quit")) {
                     System.out.println("Вы решили соскочить? Грац! Игра окончена.");
-                    scanner.close();
+                    return;
                 } else {
                     try {
                         userStake = Integer.parseInt(inputStake);
@@ -89,6 +89,5 @@ public class Main {
             }
         }
         System.out.println("Деньги испарились! Игра окончена.");
-        scanner.close();
     }
 }
